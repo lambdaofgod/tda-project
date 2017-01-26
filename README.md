@@ -6,4 +6,5 @@ Project for [data exploration class](http://www.ii.uni.wroc.pl/~lipinski/lecture
 ## Setup
 Dependencies
 [javaplex](https://github.com/appliedtopology/javaplex) (put jar in /lib)
+
 [Jupyter Scala](https://github.com/alexarchambault/jupyter-scala)
