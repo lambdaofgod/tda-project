@@ -9,7 +9,7 @@ lazy val toplevelPath = Path("/" +
 
 lazy val datadir = toplevelPath / 'data
 
-private lazy val jarPath = toplevelPath / "lib" / "computational-topology-assembly-1.0.jar" 
+private lazy val jarPath = toplevelPath / "lib" / "tda-project-assembly-1.0.jar"
 
 def loadProjectDependencies = interp.load.cp(jarPath)
 
