@@ -1,4 +1,4 @@
-name := "computational-topology"
+name := "tda-project"
 
 version := "1.0"
 
@@ -11,11 +11,7 @@ libraryDependencies ++= Seq(
   "org.scalanlp" %% "breeze-natives" % "0.12" exclude("junit", "junit")
 )
 
-resolvers += "Sonatype Releases" at "https://oss.sonatype.org/content/repositories/releases/"
+resolvers +=
+  "Sonatype Releases" at
+    "https://oss.sonatype.org/content/repositories/releases/"
 
-assemblyMergeStrategy in assembly  := {
-  case PathList("junit", _) => MergeStrategy.last
-  case x =>
-    val oldStrategy = (assemblyMergeStrategy in assembly).value
-    oldStrategy(x)
-}
