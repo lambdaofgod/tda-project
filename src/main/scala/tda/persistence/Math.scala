@@ -2,9 +2,7 @@ package tda.persistence
 
 import breeze.linalg._
 
-/**
-  * Created by kuba on 04.02.17.
-  */
+
 object Math {
 
   def dist(X: DenseMatrix[Double], Y: DenseMatrix[Double]): DenseMatrix[Double] = {
