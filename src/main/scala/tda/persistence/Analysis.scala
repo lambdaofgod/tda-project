@@ -15,7 +15,7 @@ object Analysis {
   def defaultPersistenceAlgorithm(dim: Int) =
     Plex4.getModularSimplicialAlgorithm(dim, 2)
 
-  def barcodeImages(
+  def intervalsWithImages(
       complex: AbstractFilteredStream[Simplex],
       maxDimension: Int,
       maxFiltrationValue: Double,
@@ -23,7 +23,7 @@ object Analysis {
     val intervals = persistence.computeIntervals(complex)
     val images = intervalImages(intervals, maxFiltrationValue)
 
-    images
+    (intervals, images)
   }
 
   def subsampleByMaxmin(noSamples: Int, dataArray: Array[Array[Double]]): Array[Array[Double]] = {
