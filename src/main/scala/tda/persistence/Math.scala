@@ -12,4 +12,14 @@ object Math {
     val tmp1 =  XdotY(::, *) + XdotX
     tmp1(*, ::) + YdotY
   }
+
+  def embedding(x: Double, y: Double): Array[Double] = {
+    Array(
+      x *x,
+      y*y,
+      math.sqrt(2) * x * y,
+      math.sqrt(2)* x,
+      math.sqrt(2)* y,
+      1)
+  }
 }
