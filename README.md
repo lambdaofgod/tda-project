@@ -10,7 +10,9 @@ In the project method of *persistent homology* is used to evaluate appropriate h
 
 ## Setup
 
+
 #### Notebook
+``` setup.sh ``` downloads dependencies.
 Run ``` sbt assembly ``` (creates project jar used by notebook)
 
 ### Dependencies
@@ -18,5 +20,5 @@ sbt
 
 [Jupyter Scala](https://github.com/alexarchambault/jupyter-scala)
 
-[javaplex](https://github.com/appliedtopology/javaplex) (put jar in /lib)
+[javaplex](https://github.com/appliedtopology/javaplex) 
 
