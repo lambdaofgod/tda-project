@@ -13,10 +13,11 @@ In the project method of *persistent homology* is used to evaluate appropriate h
 
 #### Notebook
 ``` setup.sh ``` downloads dependencies.
-Run ``` sbt assembly ``` (creates project jar used by notebook)
+
+Run ``` sbt assembly ``` (creates project jar used by notebook) to build required jar.
 
 ### Dependencies
-sbt
+[sbt](http://www.scala-sbt.org/)
 
 [Jupyter Scala](https://github.com/alexarchambault/jupyter-scala)
 
